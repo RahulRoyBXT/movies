@@ -30,7 +30,7 @@ const App = () => {
 
   // Debounce the search term
   // This will only run when the debounceSearchTerm changes
-  useDebounce(()=> setDebounceSearchTerm(searchTerm), 500, [searchTerm])
+  useDebounce(()=> setDebounceSearchTerm(searchTerm), 1000, [searchTerm])
 
   const fetchMovies = async (query = '') => {
     setIsLoading(true)
